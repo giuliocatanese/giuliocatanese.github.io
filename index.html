@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Dichiara il documento come HTML5 -->
+
+<html class="no-js" lang="en">
+<!-- Radice del documento. no-js: classe usata da Modernizr, 
+     viene sostituita con "js" se JavaScript è disponibile -->
+
+<head>
+<!-- Sezione metadati, non visibile all'utente -->
+
+<meta charset="utf-8">
+<!-- Codifica caratteri UTF-8: supporta tutti i caratteri unicode -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Forza IE a usare il motore di rendering più recente disponibile -->
+
+<title>something.com</title>
+<!-- Titolo della pagina: appare nel tab del browser e nei risultati Google -->
+
+<meta name="description" content="another of...">
+<!-- Descrizione della pagina per i motori di ricerca (SEO) -->
+
+<!--<meta name="ocs-site-verification" content="e8c6307fad6915b85d6c90eefe34958f">-->
+<!-- Codice di verifica proprietà sito per Open Cart Store o altro servizio -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<!-- Responsività mobile: adatta la larghezza al dispositivo, 
+     zoom iniziale 1:1, disabilita zoom manuale dell'utente -->
+
+<meta property="fb:admins" content="719615165">
+<!-- ID utente Facebook dell'amministratore: per Facebook Insights -->
+
+<!--<meta property="fb:app_id" content="175933232539270">-->
+<!-- ID app Facebook: abilita il social graph e condivisione avanzata -->
+
+<link rel="stylesheet" href="/css/style.css">
+<!-- Carica H5BP reset CSS: normalizza stili tra browser diversi -->
+
+<link rel="stylesheet" href="/css/theme.css">
+<!-- Carica il tema: colori, font, wrapper, layout generale -->
+
+<link rel="stylesheet" href="css/font.css">
+<!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ruda">-->
+<!-- Carica il font Ruda da Google Fonts (richiede connessione internet) -->
+
+<link rel="stylesheet" href="css/lior.css">
+<!-- Carica il CSS specifico: posizionamento canvas, logo, testo centrale -->
+
+
+<!--<link rel="image_src" href="http://www.liorhakim.com/img/leo-thumbnail.png">-->
+<!-- Immagine di anteprima per vecchi aggregatori e alcune piattaforme social -->
+
+<!--<meta property="og:image" content="http://www.liorhakim.com/img/leo-thumbnail.png">-->
+<!-- Immagine Open Graph: quella mostrata quando il link viene condiviso 
+     su Facebook, LinkedIn, WhatsApp etc. -->
+
+<!--script(src="js/libs/modernizr-2.0.6.min.js")-->
+<!-- Commento residuo di sintassi Jade/Pug (template engine Node.js) 
+     mai convertito in HTML, ignorato dal browser -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+<!-- Carica Modernizr da CDN: rileva le funzionalità del browser 
+     e aggiunge classi CSS corrispondenti all'elemento <html> -->
+
+</head>
+
+<body>
+
+<header></header>
+<!-- Intestazione della pagina: vuota, presente per struttura semantica HTML5 -->
+
+<canvas id="canvas"></canvas>
+<!-- Elemento canvas: superficie di disegno dove worm.js 
+     renderizza l'animazione dei vermi -->
+
+<div id="main">
+<!-- Contenitore centrale: posizionato al centro dello schermo via lior.css -->
+
+<a class="logo" href="#">
+<!-- Link cliccabile che avvolge il logo, href="#" non naviga da nessuna parte.
+     La classe logo gestisce la transizione opacity al hover -->
+
+<img class="leo" src="img/leo.png">
+<!-- Immagine del logo (il leone). La classe leo ne controlla la dimensione 
+     massima via CSS -->
+
+</a>
+
+<div id="pay">
+<!-- Contenitore del testo sotto il logo -->
+
+<div>something dot com</div>
+<!-- Testo visibile: scritto "dot com" invece di .com, 
+     tecnica vecchia anti-spam per gli scraper di email/domini -->
+
+</div>
+</div>
+
+<footer></footer>
+<!-- Piè di pagina: vuoto, presente per struttura semantica HTML5 -->
+
+
+
+
+
+
+
+
+
+<!-- GA Start-->
+<!-- Inizializza l'array della coda comandi GA, 
+     o usa quello esistente se già presente -->
+
+<!-- Imposta l'ID account Google Analytics Universal (versione vecchia, 
+     dismessa da Google nel 2023) -->
+
+<!-- Imposta il dominio di tracciamento dinamicamente dal browser -->
+
+<!-- Registra una visualizzazione di pagina con URL completo inclusi 
+     path, query string e hash -->
+
+
+<!-- Crea un elemento <script> dinamicamente -->
+
+<!-- Lo imposta come JavaScript asincrono: non blocca il rendering della pagina -->
+
+<!-- Sceglie https o http in base al protocollo della pagina corrente,
+       poi carica lo script GA dal server Google -->     
+
+<!-- Trova il primo tag <script> già presente nel DOM -->
+
+  <!-- Inserisce lo script GA prima di quello trovato: 
+       tecnica standard per caricamento asincrono dellepoca -->
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+
+
+_gaq.push(['_setAccount', 'UA-27639776-1']);
+
+
+_gaq.push(['_setDomainName', window.location.host]);
+
+
+_gaq.push(['_trackPageview',location.pathname + location.search + location.hash]);
+
+
+(function() 
+  var ga = document.createElement('script'); 
+ 
+  
+  ga.type = 'text/javascript'; ga.async = true;
+
+  
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') 
+           + '.google-analytics.com/ga.js';
+
+  
+  var s = document.getElementsByTagName('script')[0]; 
+
+  
+  s.parentNode.insertBefore(ga, s);
+
+();
+
+</script>
+<!-- GA End-->
+
+<!--scripts start-->
+<script src="js/worm.js"></script>
+<!-- Carica il JS dell'animazione vermi. Posizionato in fondo al body: 
+     il DOM è già pronto quando il codice viene eseguito -->
+<!--scripts end-->
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+body{
+  background: hsl(0, 0%, 10%);
+  color:white;
+  font-family: 'Ruda', sans-serif;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,a:visited{
+  color: #ccc;
+}
+
+.wrapper{
+    margin: 0px auto;
+    width:960px;
+    position: relative;
+    padding:10px;
+}
+
+.content{
+}
+
+.fleft{
+  float:left;
+  display:inline-block;
+}
